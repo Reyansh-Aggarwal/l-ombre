@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'vendya';
+    src: url('../assets/fonts/vendya.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'clash-display-light';
+    src: url('../assets/fonts/ClashDisplay-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
