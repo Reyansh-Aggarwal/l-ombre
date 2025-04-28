@@ -5,24 +5,30 @@
         <meta charset="UTF-8" />
         <title>L'Ombre</title>
         <script src="dist/script.js" defer></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel = "stylesheet" href = "dist/output.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <link rel="icon" href="assets/logo.PNG" type="image/png">
       </head>
+
       <header class = "flex flex-row text-light-red justify-center">
-        <img class = "h-[5rem] lg:h-[7rem]" src = "assets/logo.PNG">
-        <h1 class = "text-2xl lg:text-4xl self-center">L'Ombre</h1>
+        <img class = "h-[5rem] xl:h-[7rem]" src = "assets/logo.PNG">
+        <h1 class = "text-2xl xl:text-4xl self-center">L'Ombre</h1>
       </header>
 
-      <body class = "bg-fre-art bg-cover w-screen h-full font-vendya  scroll-py-16">
-        <section id = "hero"
-        class = "flex flex-col gap-8 lg:gap-16 align-center w-full text-center align-center p-32 lg:py-[15rem] lg:px-28">
-            <p class = "font-vendya text-6xl lg:text-9xl text-white text-center w-full">
+      <body class = "bg-fre-art bg-cover w-screen h-full font-vendya scroll-p-16 scroll-smooth">
+        <section data-aos="fade-up" id = "hero"
+        class = "flex flex-col gap-8 xl:gap-16 align-center w-full text-center align-center p-32 xl:py-[15rem] xl:px-28">
+            <p class = "font-vendya text-6xl xl:text-9xl text-white text-center w-full">
                 History Never Tasted <br> This 
-                <span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500
-              text-transparent bg-clip-text">Good.</span>
+                <span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 animate-gradient bg-[length:300%_300%]
+                text-transparent bg-clip-text absolute animate-gradient">Good.</span>  
+                <span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 bg-[length:300%_300%]
+                text-transparent bg-clip-text blur-lg animate-pulse">Good.</span>
             </p>
             <div 
-            class = "flex flex-row gap-8 font-clash-display-light justify-center w-full text-lg lg:text-5xl tracking-tightest ">
+            class = "flex flex-row gap-8 font-clash-display-light justify-center w-full text-lg xl:text-5xl tracking-tightest ">
                 <button id = "reserve" onclick ="scrollToSect('reserveSect')"
                 class = "text-black bg-dark-red px-2 outline outline-dark-red origin-bottom scale-y-125">
                     Reserve Table
@@ -33,37 +39,46 @@
                 </button>
             </div>
         </section>
-        <section id = "abt-us"
-        class = "py-32 px-16 lg:px-28 flex flex-row align-center">
+        <section data-aos="fade-up" id = "abt-us"
+        class = "py-32 px-16 xl:px-28 flex flex-row align-center">
             <div
             class = "flex flex-col basis-1/2 h-full self-center gap-8">
-                <h1 class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500
-                text-transparent bg-clip-text text-6xl lg:text-9xl">About Us</h1>
-                <p class = "text-white font-clash-display-light tracking-tightest origin-bottom scale-y-125 lg:text-2xl">
+                <div class = "relative">   
+                    <h1 class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 animate-gradient bg-[length:300%_300%]
+                    text-transparent bg-clip-text text-6xl xl:text-9xl absolute">About Us</h1>
+                    <h1 class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 bg-[length:300%_300%]
+                    text-transparent bg-clip-text text-6xl xl:text-9xl blur-lg animate-pulse">About Us</h1>
+                </div>  
+                <p class = "text-white font-clash-display-light tracking-tightest origin-bottom scale-y-125 xl:text-2xl">
                     Welcome to L'Ombre - where 18th-century French grandeur meets the mystery of the brotherhood. Inspired by Assassin’s Creed Unity, our dishes fuse classic French elegance with daring artistry, offering a dining experience steeped in legacy, rebellion, and the timeless allure of hidden stories.
                 </p>
             </div>
-            <img class = "basis-1/2 w-3/4" src = "assets/about-us-food.PNG">
+            <img class = "basis-1/2 w-3/4 h-auto" src = "assets/about-us-food.PNG">
         </section>
-        <section id = "menu"
-        class = "flex flex-col items-center gap-8 px-16 lg:px-28">
-            <div class = "flex flex-row">
-                <img class = "w-full" src = "assets/menu-food.PNG">
+        <section  data-aos="fade-up" id = "menu"
+        class = "flex flex-col items-center gap-16 px-16 xl:px-28">
+            <div class = "flex flex-row h-fit">
+                <img class = "w-full h-fit aspect-square self-center" src = "assets/menu-food.PNG">
                 <div
                 class = "text-white text-center flex flex-col self-center basis-4/5">
-                    <h1 class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500
-                    text-transparent bg-clip-text text-6xl lg:text-9xl w-full">Menu</h1>
+                <div class = "w-full">
+                    <span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 animate-gradient bg-[length:300%_300%]
+                    text-transparent bg-clip-text text-6xl xl:text-9xl absolute">Menu</span >
+                    <span  class = "bg-gradient-to-r from-yellow-500  via-yellow-300 to-yellow-500 bg-[length:300%_300%]
+                    text-transparent bg-clip-text text-6xl xl:text-9xl blur-lg animate-pulse">Menu</span >
+                </div>    
+                
                     <div id = "menu-items" 
                     class = "flex flex-col font-clash-display-light tracking-tightest scale-y-125 py-16">
                         <div id = "item-1" 
                         class = "flex flex-col justify-between w-full ">
                             <div class = "flex flex-col w-full ">
-                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl lg:text-4xl">
+                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl xl:text-4xl">
                                     <p>Fresh Croissant</p>
                                     <p>₹600</p>
                                 </div>
                             </div>
-                            <p class = "text-left text-sm lg:text-2xl">
+                            <p class = "text-left text-sm xl:text-2xl">
                                 Buttery, flaky croissant-symbolizing timeless classic French craftsmanship.
                             </p>
                         </div>
@@ -71,12 +86,12 @@
                         <div id = "item-2"
                         class = "flex flex-col justify-between w-full ">
                             <div class = "flex flex-col w-full ">
-                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl lg:text-4xl">
+                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl xl:text-4xl">
                                     <p>Coq au Vin</p>
                                     <p>₹1500</p>
                                 </div>
                             </div>
-                            <p class = "text-left text-sm lg:text-2xl">
+                            <p class = "text-left text-sm xl:text-2xl">
                                 Chicken slow-braised in red wine and herbs - rustic luxury from 18th-century Paris.
                             </p>
                         </div>
@@ -84,12 +99,12 @@
                         <div id = "item-3"
                         class = "flex flex-col justify-between w-full ">
                             <div class = "flex flex-col w-full ">
-                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl lg:text-4xl">
+                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl xl:text-4xl">
                                     <p>Filet de Boeuf</p>
                                     <p>₹2100</p>
                                 </div>
                             </div>
-                            <p class = "text-left text-sm lg:text-2xl">
+                            <p class = "text-left text-sm xl:text-2xl">
                                 Perfectly seared, melt-in-the-mouth beef-rich, powerful, and fit for nobility.
                             </p>
                         </div>
@@ -97,12 +112,12 @@
                         <div id = "item-4"
                         class = "flex flex-col justify-between w-full ">
                             <div class = "flex flex-col w-full ">
-                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl lg:text-4xl">
+                                <div class = "flex flex-row justify-between w-full text-light-red text-2xl xl:text-4xl">
                                     <p>Crème Brûlée</p>
                                     <p>₹800</p>
                                 </div>
                             </div>
-                            <p class = "text-left text-sm lg:text-2xl">
+                            <p class = "text-left text-sm xl:text-2xl">
                                 Silky vanilla custard with a caramelized sugar crust-a dessert of elegance and hidden surprises.
                             </p>
                         </div>
@@ -110,35 +125,44 @@
                 </div>
             </div>
             <button id = "menuButton"
-                 class = "bg-transparent px-2 w-fit outline outline-yellow-500 font-clash-display-light text-yellow-300 text-2xl lg:text-4xl  origin-bottom scale-y-125 ">
+                 class = "bg-transparent px-2 w-fit outline outline-yellow-500 font-clash-display-light text-yellow-300 text-2xl xl:text-4xl origin-bottom scale-y-125 animate-gradient">
                     Open Menu
             </button>
 
         </section>
-        <section id = "reserveSect"
-        class = "flex flex-col gap-8 align-center w-full text-center align-center p-32 pb-46">
-            <p class = "font-vendya text-6xl lg:text-9xl text-white text-center w-full">
+        <section  data-aos="fade-up" id = "reserveSect"
+        class = "flex flex-col gap-12 align-center w-full text-center align-center p-32 pb-46">
+            <p class = "font-vendya text-6xl xl:text-9xl text-white text-center w-full">
                Book a Reservation <br> 
-                <span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500
-              text-transparent bg-clip-text">Today.</span>
-            </p>           
+                <span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 animate-gradient bg-[length:300%_300%]
+              text-transparent bg-clip-text absolute">Today.</span><span class = "bg-gradient-to-r from-yellow-500  via-yellow-300  to-yellow-500 bg-[length:300%_300%]
+              text-transparent bg-clip-text blur-lg animate-pulse">Today.</span>
+            </p>  
+            <div class = "flex flex-row w-full gap-16 justify-center">
+                <button class = "p-2 hover:outline-solid">
+                    <i class="text-dark-red fa-3x fa-solid fa-phone"></i>
+                </button>
+                <button class = "p-2 hover:outline-solid">
+                    <i class="text-dark-red fa-3x fa-solid fa-envelope"></i>
+                </button>
+            </div>         
         </section>
       </body>
 
       <footer class = "flex flex-row gap-32 justify-between mt-48 py-16 px-16 bottom-0 bg-white w-full bg-opacity-70">
         <div class = "flex flex-col">
             <div class = "flex flex-row">
-                <img class = "h-[5rem] lg:h-[10rem]" src = "assets/logo.PNG">
-                <h1 class = "text-2xl lg:text-5xl self-center text-light-red">L'Ombre</h1>
+                <img class = "h-[5rem] xl:h-[10rem]" src = "assets/logo.PNG">
+                <h1 class = "text-2xl xl:text-5xl self-center text-light-red">L'Ombre</h1>
             </div>
         </div>
-        <div class = "flex flex-col text-light-red text-lg lg:text-3xl">
+        <div class = "flex flex-col text-light-red text-lg xl:text-3xl">
             <div class = "flex flex-row gap-16">
                 <div class = "flex flex-col">
-                    <h1>Home</h1>
-                    <h1>About Us</h1>
-                    <h1>Menu</h1>
-                    <h1>Booking</h1>
+                    <button onclick="scrollToSect('hero')">Home</button>
+                    <button onclick="scrollToSect('abt-us')">About Us</button>
+                    <button onclick="scrollToSect('menu')">Menu</button>
+                    <button onclick="scrollToSect('reserveSect')">Booking</button>
                 </div>
                 <div class = "flex flex-col">
                     <a href="tel:+91-9311352507" class = "">+91-9311352507</a>

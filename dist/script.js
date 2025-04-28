@@ -7,3 +7,16 @@ function scrollToSect(targID) {
         console.error("Element not found:", targID);
     }
 }
+
+let isScrolling;
+window.addEventListener('scroll', () => {
+  clearTimeout(isScrolling);
+  isScrolling = setTimeout(() => {
+  }, 120);
+}, false);
+
+AOS.init({
+    duration: 1200,
+    easing: 'ease-out-quad',
+    once: true // Animate only once
+  });
