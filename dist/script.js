@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 }, false);
 
 AOS.init({
-    duration: 1200,
+    duration: 1500,
     easing: 'ease-out-quad',
     once: true // Animate only once
   });
